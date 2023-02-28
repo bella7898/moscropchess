@@ -53,10 +53,10 @@ body{
     color: yellow;
 }
 
-@media screen and (max-width: 600px) {
-    .info{
-        font-size: 1.25em
-    }
+.info h6{
+    margin: 0; 
+    padding-top: 3%; 
+    padding-bottom: 4%;
 }
 
 .info-background{
@@ -81,16 +81,106 @@ body{
     background-color:rgba(0, 0, 0, 1)
 }
 
-.darker{
-    background-color: #313178;
+@media screen and (max-width: 600px) {
+    .info #title{
+        font-size: 1.5em
+    }
+    .info h6{
+        margin-top: 5%;
+    }
+    .info-background{
+        pointer-events: none;
+    }
+    .startBtn{
+        margin-top: 10%;
+    }
 }
 
-.websites{
-    line-height: 12px;
+/*min-width: 269 from testing*/
+@media screen and (max-width: 400px) {
+    .info #title{
+        font-size: 1em
+    }
+}
+
+.dark{
+    background-color: #313178;
+    width: 100%;
+    padding: 20px;
+}
+
+.about{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about img{
+    float: right;
+    border-radius: 35px;
+    padding: 0 10px;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.lighter h1{
+    color: #313178;
+    font-size: 285%;
+    line-height: 10px;
+}
+
+.text{
+    padding-left: 5%;
+    padding-right: 2%;
+}
+
+.text h1{
+    font-size: 300%;
+    line-height: 10px;
+    color: #4e4e94;
+}
+
+.about img{
+    margin-right: 5%;
+}
+
+.about img:hover {
+    transform: scale(1.1);
 }
 
 .center{
     text-align: center;
+}
+
+.resources{
+    display: flex;
+}
+
+figure{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    flex: 16.66%;
+    padding: 5px;
+    transform: scale(1);
+    background: #2c2c6c;
+    border-radius: 10px;
+}
+
+figure img{
+    padding: 5px 5px 0px 5px;
+}
+
+figure:hover{
+    transform: scale(1.1);
+    background: #25255c;
+}
+
+figure a{
+    color: white;
+    text-decoration: none;
 }
 
 footer{
@@ -104,7 +194,7 @@ footer{
 }
 
 .links{
-    padding-top: 1.5%;
+    padding-top: 2%;
     font-size: 25px;
 }
 
@@ -125,7 +215,7 @@ footer{
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 12px;
   }
   
   /* Track */
@@ -136,6 +226,7 @@ footer{
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
+    border-radius: 5px;
   }
   
   /* Handle on hover */
