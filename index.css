@@ -136,7 +136,7 @@ body{
     padding-right: 2%;
 }
 
-.text h1{
+.dark h1{
     font-size: 300%;
     line-height: 10px;
     color: #4e4e94;
@@ -156,6 +156,7 @@ body{
 
 .resources{
     display: flex;
+    padding-right: 3%;
 }
 
 figure{
