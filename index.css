@@ -125,6 +125,10 @@ body{
     transition: transform .5s;
 }
 
+.lighter p{
+    padding: 0 20px;
+}
+
 .lighter h1{
     color: #313178;
     font-size: 285%;
@@ -154,6 +158,7 @@ body{
     text-align: center;
 }
 
+/*resources*/
 .resources{
     display: flex;
     padding-right: 3%;
@@ -184,6 +189,7 @@ figure a{
     text-decoration: none;
 }
 
+/*footer*/
 footer{
     flex-shrink: 0;
     color: rgb(147, 161, 176);
@@ -199,6 +205,7 @@ footer{
     font-size: 25px;
 }
 
+/*media screens*/
 @media screen and (max-width: 600px) {
     .links{
         padding-top: 5%;
@@ -214,25 +221,19 @@ footer{
     color: darkslategrey;
 }
 
-/* width */
+/* scrollbar */
 ::-webkit-scrollbar {
     width: 12px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track {
     background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+}
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
 
   
